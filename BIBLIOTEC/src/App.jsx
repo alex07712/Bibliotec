@@ -1,6 +1,6 @@
-import { BrowserRouter } from "react-router-dom" 
+import { useState } from 'react'
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 import { Rutas } from './routes'
-
 
 function App() {
 
