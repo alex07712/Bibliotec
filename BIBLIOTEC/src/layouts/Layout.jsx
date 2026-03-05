@@ -10,7 +10,11 @@ export function Layout() {
     <div className="flex">
       {Visible && <Sidebar />}
       <main className="flex-1">
-        <Button onClick={() => setVisible(!Visible) } className="text-2xl text-gray-700 hover:text-red-500">{""}☰ hola</Button>
+        <header className="bg-white shadow px-4 py-3 flex items-center">
+          <Button onClick={() => setVisible(!Visible)} className="text-2xl text-gray-700 hover:text-blue-300">
+            ☰
+          </Button>
+        </header>
         <Outlet />
       </main>
     </div>
