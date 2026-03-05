@@ -1,6 +1,6 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
-import { Home, Gestion } from '../pages'
+import { Home, Gestion, Prestamos } from '../pages'
 
 
 export function Rutas() {
@@ -8,6 +8,7 @@ export function Rutas() {
     <Routes>
       <Route path='/home' element={<Home/>}/>
       <Route path='/gestion' element={<Gestion/>}/>
+      <Route path='/prestamos' element={<Prestamos/>}/>
     </Routes>
   )
 }
