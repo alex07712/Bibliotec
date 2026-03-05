@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Outlet } from 'react-router-dom'
 import { Sidebar } from './sidebar'
-import { Button } from '../components'
+import { Button } from '..'
 
 export function Layout() {
   const [Visible, setVisible] = useState(true)
