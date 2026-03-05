@@ -1,13 +1,18 @@
 import { useState } from 'react'
 import { BrowserRouter, Routes, Route  } from "react-router-dom" 
 
+import { useState } from 'react'
+import { BrowserRouter } from "react-router-dom" 
+import { Rutas } from './routes'
+
+
 function App() {
 
   return (
-      <dev>
-       <h1>hola</h1>
-      </dev>
-  )
+      <BrowserRouter>
+      <Rutas/>
+      </BrowserRouter>
+  );
 }
 
-export default App;
+export default App
