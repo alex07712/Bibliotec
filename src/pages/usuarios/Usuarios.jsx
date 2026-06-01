@@ -60,14 +60,20 @@ export function Usuarios() {
     datosBd();
   }, []);
 
-  const datosFiltrados = datos.filter((item) => {
-    const texto = busqueda.toLowerCase();
-    return (
-      item.nombre?.toLowerCase().includes(texto) ||
-      item.correo?.toLowerCase().includes(texto) ||
-      item.telefono?.toLowerCase().includes(texto)
-    );
-  });
+const datosFiltrados = datos.filter((item) => {
+  if (!busqueda) return true;  // Si no hay búsqueda, mostrar todos
+  
+  const texto = busqueda.toLowerCase();
+  
+  // Convertir telefono a string antes de buscar
+  const telefonoStr = String(item.telefono ?? '');
+  
+  return (
+    item.nombre?.toLowerCase().includes(texto) ||
+    item.correo?.toLowerCase().includes(texto) ||
+    telefonoStr.includes(busqueda)  // ✅ Búsqueda numérica sin toLowerCase
+  );
+});
 
   return (
     <div className="p-8 space-y-8">

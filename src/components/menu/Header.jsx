@@ -57,7 +57,7 @@ export function Header({ userName, toggleSidebar }) {
   };
 
   return (
-    <header className="h-16 bg-slate-800 border-b border-slate-700 px-4 lg:px-8 flex items-center justify-between sticky top-0 z-30 shadow-lg">
+    <header className="h-18 bg-slate-800 border-b border-slate-700 px-4 lg:px-8 flex items-center justify-between sticky top-0 z-30 shadow-lg">
       {/* Botón de menú (solo visible en móvil) */}
       <div className="flex items-center gap-4">
         <button
