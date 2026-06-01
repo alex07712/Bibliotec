@@ -2,7 +2,7 @@ import { useFormik } from "formik";
 import { InitialValues, ValidationSchema } from "./FormPersona.form";
 import ApiDatos from "../../services/ApiDatos";
 import Swal from "sweetalert2";
-import { Search } from "lucide-react"; // <-- ¡CORREGIDO! Cambiamos Camera por Search
+import { Search } from "lucide-react";
 import { useState } from "react";
 
 export function FormPersona({ datos, closeModal, refreshTable }) {
