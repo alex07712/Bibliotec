@@ -1,0 +1,7 @@
+export * from "./Gestion"
+export * from "./Home"
+export * from "./Prestamos"
+export * from "./NotFound"
+export * from "./Login"
+export * from "./Catalogo"
+export * from "./Usuarios"
