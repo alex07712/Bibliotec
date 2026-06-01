@@ -129,7 +129,7 @@ export function FormLibro({ datos, closeModal, refreshTable }) {
         />
       </div>
 
-      {/* Subida de imagen con botón estilo header (crema) e ícono Camera */}
+      {/* Subida de imagen con botón estilo e ícono Camera */}
       <div>
         <label className="block text-sm font-medium text-gray-700 mb-1">Imagen del libro</label>
         <div className="flex items-center gap-3">
