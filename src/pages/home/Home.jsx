@@ -23,7 +23,6 @@ export function Home() {
   if (loading) return <div className="p-8 text-center">Cargando...</div>;
   if (!libros.length) return <div className="p-8 text-center">No hay libros disponibles.</div>;
 
-  // Puedes modificar la lógica de división según necesites
   const destacados = libros.slice(0, 9);
   const novedades = libros.slice(9, 18);
   const populares = libros.slice(18, 27);
