@@ -1,4 +1,3 @@
-// src/pages/catalogo/Catalogo.jsx
 import { useEffect, useState, useContext } from 'react';
 import { AuthContext } from '../../context/AuthContext';
 import DatosBD from '../../services/ApiDatos';
