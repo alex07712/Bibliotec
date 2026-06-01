@@ -71,7 +71,7 @@ const datosFiltrados = datos.filter((item) => {
   return (
     item.nombre?.toLowerCase().includes(texto) ||
     item.correo?.toLowerCase().includes(texto) ||
-    telefonoStr.includes(busqueda)  // ✅ Búsqueda numérica sin toLowerCase
+    telefonoStr.includes(busqueda)
   );
 });
 
@@ -173,7 +173,6 @@ const datosFiltrados = datos.filter((item) => {
               </button>
             </div>
             
-            {/* Formulario con props de control y datos */}
             <FormPersona 
               closeModal={handleOpen} 
               refreshTable={datosBd} 
