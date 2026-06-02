@@ -1,3 +1,4 @@
+// src/components/menu/Header.jsx
 import { useState, useEffect, useRef, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { LogOut, User, Menu, Camera } from "lucide-react";
@@ -67,7 +68,7 @@ export function Header({ userName, toggleSidebar }) {
         </button>
       </div>
 
-      {/* bienvenida + avata */}
+      {/* Área derecha: bienvenida + avatar */}
       <div className="flex items-center gap-3 lg:gap-6">
         <div className="flex items-center gap-3 pl-4 border-l border-slate-700">
           <div className="text-right xs:block">
