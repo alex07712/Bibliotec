@@ -1,4 +1,3 @@
-// src/components/menu/Header.jsx
 import { useState, useEffect, useRef, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { LogOut, User, Menu, Camera } from "lucide-react";
